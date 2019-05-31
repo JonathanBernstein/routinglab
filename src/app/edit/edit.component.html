@@ -1,0 +1,12 @@
+<form  #form="ngForm" (ngSubmit)="saveProfile(ngForm)">
+  <label for="name">Name:
+    <input type="text" name="name" [(ngModel)]="userProfile.name">
+  </label>
+  <label for="contact">Contact:
+    <input type="text" name="contact" [(ngModel)]="userProfile.contact">
+  </label>
+   <label for="bio">Bio:
+     <textarea name="bio" cols="30" rows="10" [(ngModel)]="userProfile.bio"></textarea>
+     <button>Update</button>
+   </label>
+</form>
